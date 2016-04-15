@@ -1,5 +1,5 @@
-1. Introduction
- 1.1 Purpose and Scope
+# Introduction
+ ## Purpose and Scope
   In this document the software requirements for the TypiCMS NewsBlog software platform are assembled, developed and specified. 
   The purpose of this document is to specify the requirements that have to be fulfilled by the NewsBlog aggregation, preservation, management and  dissemination system which will be developed in the TypiCMS NewsBlog ever project.The software will feature NewsWebBlog content browsing including advanced publishing and opinion sharing. 
  1.2 Document Conventions
