@@ -1,0 +1,20 @@
+The login form should have a "Log in" header.
+The Login form should have an username field.
+The user should be able to login only with an existing user.
+The user input in the username field should be underlined in red if no such user exists in the database.
+"User does not exist" should be displayed above the Login form header, if the user has entered a username that does not exist.
+The Login form should have a password field.
+"Wrong password, try again" should be displayed if the entered password is incorrect.
+The user should not be logged in with an incorrect password.
+The user should be logged in if the password is correct.
+The Login form should have a Remember me checkbox.
+If the Remember me checkbox is not marked, the user should be asked for credentials everytime he accesses the administrator panel.
+If the Remember me checkbox is not marked, the user should not be asked for credentials. 
+The login form should have a Log in button.
+The user should not be logged in if he doesn't press the Log In Button, even with correct credentials.
+The user should be logged in after entering correct credentials and pressing the Log In Button.
+The Login form should have a Forgot your password? button.
+The "Forgot your password" button shuld lead to a Reset password page.
+The Reset password page should have an E-mail field and Reset Password button.
+If the entered e-mail does not have a "@" character, "Please include '@' in the email-address" should be displayed as a message box.
+If the user enters a correct e-mail, he should receive an e-mail with information how to reset the password.
