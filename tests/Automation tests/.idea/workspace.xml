@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa820eeb-0635-4b43-8fde-c93c0cb7b9f4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestAdminLogin.class" afterPath="$PROJECT_DIR$/target/test-classes/TestAdminLogin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../LoginRequirements.txt" afterPath="$PROJECT_DIR$/../../LoginRequirements.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" afterPath="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" />
     </list>
@@ -36,15 +39,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAdminLogin.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestAdminLogin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+            <state relative-caret-position="-136">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3570#3571#0" expanded="true" />
-                <element signature="e#3604#3605#0" expanded="true" />
+                <element signature="e#3704#3705#0" expanded="true" />
+                <element signature="e#3738#3739#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCreateNewUserByAdmin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="219" column="5" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#12096#12097#0" expanded="true" />
+                <element signature="e#12130#12131#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +90,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestAdminLoginWithValidCredential.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java" />
       </list>
     </option>
   </component>
@@ -175,20 +193,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.TestAdminLogin">
-    <configuration default="false" name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestCreateNewUserByAdmin">
+    <configuration default="false" name="TestCreateNewUserByAdmin.TestCreateNewAdminByAdmin_ValidCredentials_UserShouldBeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestTypiCMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAdminLogin" />
-      <option name="METHOD_NAME" value="TestAdminLoginWithEmailWithoutTailEnd" />
+      <option name="MAIN_CLASS_NAME" value="TestCreateNewUserByAdmin" />
+      <option name="METHOD_NAME" value="TestCreateNewAdminByAdmin_ValidCredentials_UserShouldBeCreated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -202,14 +220,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestAdminLogin.TestAdminLoginWithValidCredentialsAndRememberOption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_InvalidPassword_ShouldBeThrowAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestTypiCMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAdminLogin" />
-      <option name="METHOD_NAME" value="TestAdminLoginWithValidCredentialsAndRememberOption" />
+      <option name="MAIN_CLASS_NAME" value="TestCreateNewUserByAdmin" />
+      <option name="METHOD_NAME" value="TestCreateNewUserByAdmin_InvalidPassword_ShouldBeThrowAlert" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -223,14 +241,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestAdminLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestCreateNewUserByAdmin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestTypiCMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAdminLogin" />
-      <option name="METHOD_NAME" value="TestAdminLoginWithValidCredentialsAndRememberOption" />
+      <option name="MAIN_CLASS_NAME" value="TestCreateNewUserByAdmin" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -244,14 +262,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestAdminLogin.TestAdminLogin_ValidCredentials_ShouldLoginCorectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestTypiCMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAdminLogin" />
-      <option name="METHOD_NAME" value="TestAdminLogin_ValidCredentials_ShouldLoginCorectly" />
+      <option name="MAIN_CLASS_NAME" value="TestCreateNewUserByAdmin" />
+      <option name="METHOD_NAME" value="TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -265,14 +283,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestAdminLogin.TestAdminLogin_InvalidEmail_ShouldBeShowAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestCreateNewUserByAdmin.TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TestTypiCMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestAdminLogin" />
-      <option name="METHOD_NAME" value="TestAdminLogin_InvalidEmail_ShouldBeShowAlert" />
+      <option name="MAIN_CLASS_NAME" value="TestCreateNewUserByAdmin" />
+      <option name="METHOD_NAME" value="TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -521,19 +539,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLoginWithValidCredentialsAndRememberOption" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestAdminLogin" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLogin_ValidCredentials_ShouldLoginCorectly" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLogin_InvalidEmail_ShouldBeShowAlert" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewAdminByAdmin_ValidCredentials_UserShouldBeCreated" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_InvalidPassword_ShouldBeThrowAlert" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestAdminLogin" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLogin_InvalidEmail_ShouldBeShowAlert" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLogin_ValidCredentials_ShouldLoginCorectly" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestAdminLogin.TestAdminLoginWithValidCredentialsAndRememberOption" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_InvalidPassword_ShouldBeThrowAlert" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestCreateNewUserByAdmin.TestCreateNewAdminByAdmin_ValidCredentials_UserShouldBeCreated" />
       </list>
     </recent_temporary>
   </component>
@@ -551,38 +569,46 @@
       <option name="presentableId" value="Default" />
       <updated>1460811901900</updated>
     </task>
+    <task id="LOCAL-00001" summary="Some little changes">
+      <created>1460966006657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460966006657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestAdminLogin - 2016.04.18 at 10h 51m 31s.xml">
-      <configuration name="TestAdminLogin" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin - 2016.04.18 at 18h 40m 39s.xml">
+      <configuration name="TestCreateNewUserByAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin - 2016.04.18 at 10h 52m 43s.xml">
-      <configuration name="TestAdminLogin" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin - 2016.04.18 at 18h 50m 51s.xml">
+      <configuration name="TestCreateNewUserByAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithEmailWithoutTailEnd - 2016.04.18 at 10h 24m 34s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin - 2016.04.18 at 19h 25m 00s.xml">
+      <configuration name="TestCreateNewUserByAdmin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithEmailWithoutTailEnd - 2016.04.18 at 10h 27m 51s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated - 2016.04.18 at 18h 28m 36s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithEmailWithoutTailEnd - 2016.04.18 at 10h 28m 26s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated - 2016.04.18 at 18h 29m 53s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithEmailWithoutTailEnd - 2016.04.18 at 10h 29m 31s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated - 2016.04.18 at 18h 38m 15s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentialsWithoutActivated_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithEmailWithoutTailEnd - 2016.04.18 at 10h 30m 14s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithEmailWithoutTailEnd" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateNewUserByAdmin_ValidCredentials_UserShouldBeCreated - 2016.04.18 at 15h 53m 05s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentials_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithValidCredentials - 2016.04.18 at 09h 37m 01s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithValidCredentials" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateNewUserByAdmin_ValidCredentials_UserShouldBeCreated - 2016.04.18 at 15h 59m 30s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateNewUserByAdmin_ValidCredentials_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLoginWithValidCredentials - 2016.04.18 at 09h 40m 19s.xml">
-      <configuration name="TestAdminLogin.TestAdminLoginWithValidCredentials" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated - 2016.04.18 at 18h 46m 24s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestAdminLogin_TestAdminLogin_InvalidEmail_ShouldBeShowAlert - 2016.04.18 at 10h 52m 13s.xml">
-      <configuration name="TestAdminLogin.TestAdminLogin_InvalidEmail_ShouldBeShowAlert" configurationId="JUnit" />
+    <history-entry file="TestCreateNewUserByAdmin_TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated - 2016.04.18 at 19h 23m 11s.xml">
+      <configuration name="TestCreateNewUserByAdmin.TestCreateTenNewUserByAdmin_ValidCredentials_UserShouldBeCreated" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -597,7 +623,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,8 +652,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some little changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some little changes" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -635,6 +667,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -645,12 +685,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1292">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
+            <element signature="e#3704#3705#0" expanded="true" />
+            <element signature="e#3738#3739#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -665,12 +705,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3570#3571#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
+            <element signature="e#3704#3705#0" expanded="true" />
+            <element signature="e#3738#3739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3704#3705#0" expanded="true" />
+            <element signature="e#3738#3739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="219" column="5" selection-start-line="219" selection-start-column="5" selection-end-line="219" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12096#12097#0" expanded="true" />
+            <element signature="e#12130#12131#0" expanded="true" />
           </folding>
         </state>
       </provider>

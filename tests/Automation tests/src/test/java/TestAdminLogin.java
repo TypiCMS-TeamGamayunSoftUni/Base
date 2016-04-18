@@ -26,11 +26,13 @@ public class TestAdminLogin {
 
     @Test
     public void TestAdminLogin_ValidCredentials_ShouldLoginCorrectly(){
+        String email = "dani@plam.ch";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
-        emailField.sendKeys("dani@plam.ch");
+        emailField.sendKeys(email);
 
+        String password = "qwe123";
         WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
-        passwordField.sendKeys("qwe123");
+        passwordField.sendKeys(password);
 
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
@@ -40,13 +42,14 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_InvalidEmail_ShouldBeShowAlert(){
+    public void TestAdminLogin_InvalidEmail_ShouldBeThrowAlert(){
         String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys(invalidEmail);
 
+        String password = "qwe123";
         WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
-        passwordField.sendKeys("qwe123");
+        passwordField.sendKeys(password);
 
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
@@ -56,9 +59,10 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_InvalidPassword_ShouldBeShowAlert(){
+    public void TestAdminLogin_InvalidPassword_ShouldBeThrowAlert(){
+        String email = "dani@plam.ch";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
-        emailField.sendKeys("dani@plam.ch");
+        emailField.sendKeys(email);
 
         String invalidPassword = UUID.randomUUID().toString();
         WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
