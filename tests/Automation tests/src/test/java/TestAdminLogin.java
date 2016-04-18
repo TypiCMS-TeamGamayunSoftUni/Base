@@ -8,21 +8,24 @@ import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
 
 public class TestAdminLogin {
 
     private WebDriver driver;
 
     @Before
-    public void SetUp(){
+    public void setUp(){
         this.driver = new FirefoxDriver();
         this.driver.get("http://typi-test.webstars.bg/auth/login");
         this.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         this.driver.manage().window().maximize();
+
     }
 
     @Test
-    public void TestAdminLoginWithValidCredentials(){
+    public void TestAdminLogin_ValidCredentials_ShouldLoginCorrectly(){
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys("dani@plam.ch");
 
@@ -37,7 +40,7 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLoginWithInvalidEmail(){
+    public void TestAdminLogin_InvalidEmail_ShouldBeShowAlert(){
         String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys(invalidEmail);
@@ -53,7 +56,7 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLoginWithInvalidPassword(){
+    public void TestAdminLogin_InvalidPassword_ShouldBeShowAlert(){
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys("dani@plam.ch");
 
@@ -82,12 +85,11 @@ public class TestAdminLogin {
         //WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         //loginButton.click();
 
-        //WebElement allertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
-
+        //WebElement
     //}
 
     @After
-    public void TearDown(){
+    public void tearDown(){
         this.driver.quit();
     }
 
