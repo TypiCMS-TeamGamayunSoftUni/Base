@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa820eeb-0635-4b43-8fde-c93c0cb7b9f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestAdminLogin.class" afterPath="$PROJECT_DIR$/target/test-classes/TestAdminLogin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/TestCreateNewUserByAdmin.class" afterPath="$PROJECT_DIR$/target/test-classes/TestCreateNewUserByAdmin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" afterPath="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" />
@@ -38,25 +37,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAdminLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestAdminLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1173">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3771#3772#0" expanded="true" />
-                <element signature="e#3805#3806#0" expanded="true" />
+                <element signature="e#3126#3127#0" expanded="true" />
+                <element signature="e#3160#3161#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCreateNewUserByAdmin.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCreateNewUserByAdmin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="287" column="74" selection-start-line="287" selection-start-column="74" selection-end-line="287" selection-end-column="74" />
+            <state relative-caret-position="366">
+              <caret line="288" column="5" selection-start-line="284" selection-start-column="0" selection-end-line="288" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#13574#13575#0" expanded="true" />
@@ -88,8 +87,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestAdminLoginWithValidCredential.java" />
-        <option value="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestAdminLogin.java" />
       </list>
     </option>
   </component>
@@ -582,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461136564082</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AutomationTestCreateNewUser">
+      <created>1461136706975</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461136706975</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -688,8 +694,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,8 +726,8 @@
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,8 +766,8 @@
           <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,8 +786,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,26 +800,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3771#3772#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCreateNewUserByAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="287" column="74" selection-start-line="287" selection-start-column="74" selection-end-line="287" selection-end-column="74" />
+        <state relative-caret-position="366">
+          <caret line="288" column="5" selection-start-line="284" selection-start-column="0" selection-end-line="288" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#13574#13575#0" expanded="true" />
             <element signature="e#13608#13609#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestAdminLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3126#3127#0" expanded="true" />
+            <element signature="e#3160#3161#0" expanded="true" />
           </folding>
         </state>
       </provider>

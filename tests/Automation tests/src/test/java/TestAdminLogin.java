@@ -76,24 +76,6 @@ public class TestAdminLogin {
         assertEquals("Wrong password, try again", allertField.getText());
     }
 
-
-
-    //Test
-    //public void TestAdminLogin_EmailWithoutTailEnd_ShouldBeThrowAlert(){
-        //String invalidEmail = "name" + UUID.randomUUID().toString();
-        //WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
-        //emailField.sendKeys(invalidEmail);
-
-        //String password = "qwe123";
-        //WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
-        //passwordField.sendKeys(password);
-
-        //WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
-        //loginButton.click();
-
-
-    //}
-
     @After
     public void tearDown(){
         this.driver.quit();
