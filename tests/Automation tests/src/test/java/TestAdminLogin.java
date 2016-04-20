@@ -26,6 +26,54 @@ public class TestAdminLogin {
     }
 
     @Test
+    public void TestAdminLogin_EmptyEmailAndPasswordFields_ShouldBeThrowAlert(){ ///
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
+    }
+
+    @Test
+    public void TestAdminLogin_EmptyEmailField_ShouldBeThrowAlert(){ ///
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        String password = "qwe123";
+        WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
+        passwordField.sendKeys(password);
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
+    }
+
+    @Test
+    public void TestAdminLogin_EmptyPasswordField_ShouldBeThrowAlert(){
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        String email = "dani@plam.ch";
+        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
+        emailField.sendKeys(email);
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
+    }
+
+    @Test
+    public void TestAdminLogin_InvalidEmailFieldAndEmptyPasswordField_ShouldBeThrowAlert(){
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
+        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
+        emailField.sendKeys(invalidEmail);
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
+    }
+
+    @Test
     public void TestAdminLogin_ValidCredentials_ShouldLoginCorrectly(){
         String email = "dani@plam.ch";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
@@ -43,6 +91,23 @@ public class TestAdminLogin {
     }
 
     @Test
+    public void TestAdminLogin_InvalidCredentials_ShouldLoginCorrectly(){
+        String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
+        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
+        emailField.sendKeys(invalidEmail);
+
+        String invalidPassword = "qwe1235";
+        WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
+        passwordField.sendKeys(invalidPassword);
+
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("User does not exist", alertField.getText());
+    }
+
+    @Test
     public void TestAdminLogin_InvalidEmail_ShouldBeThrowAlert(){
         String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
@@ -55,8 +120,8 @@ public class TestAdminLogin {
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
 
-        WebElement allertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
-        assertEquals("User does not exist", allertField.getText());
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("User does not exist", alertField.getText());
     }
 
     @Test
