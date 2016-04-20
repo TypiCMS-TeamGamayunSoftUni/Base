@@ -257,6 +257,36 @@ public class TestCreateNewUserByAdmin {
                 "The Password must be at least 8 characters.", alertField.getText());
     }
 
+    @Test
+    public void TestCreateNewUserByAdmin_WithoutFillsFirstAndLastNameFields_ShouldBeThrowAlert(){
+        LoginAndNavigateToNewUserPanel();
+
+        String newUserEmail = "name" +  UUID.randomUUID().toString() + "@abv.bg";
+        WebElement emailField = this.driver.findElement(By.id("email"));
+        emailField.sendKeys(newUserEmail);
+
+        String password = "12345678";
+        WebElement passwordField = this.driver.findElement(By.id("password"));
+        passwordField.sendKeys(password);
+
+        WebElement passwordConfirmationField = this.driver.findElement(By.id("password_confirmation"));
+        passwordConfirmationField.sendKeys(password);
+
+        WebElement activatedCheckButton = this.driver.findElement(By.xpath("/html/body/div/div/div[2]/form/div[5]/div[1]/label/input"));
+        activatedCheckButton.click();
+
+        WebElement visitorCheckButton = this.driver.findElement(By.xpath("/html/body/div/div/div[2]/form/div[6]/div[2]/label/input"));
+        visitorCheckButton.click();
+
+        WebElement saveButton = this.driver.findElement(By.xpath("/html/body/div/div/div[2]/form/div[1]/button[2]"));
+        saveButton.click();
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div[2]/div"));
+        assertEquals("×\n" +
+                "The form contains errors.\n" +
+                "The First name field is required.\n" +
+                "The Last name field is required.", alertField.getText());
+    }
 
     @After
     public void tearDown(){
