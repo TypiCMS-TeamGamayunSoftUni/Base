@@ -48,19 +48,6 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_EmptyPasswordField_ShouldBeThrowAlert(){
-        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
-        loginButton.click();
-
-        String email = "dani@plam.ch";
-        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
-        emailField.sendKeys(email);
-
-        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
-        assertEquals("The Email field is required.", alertField.getText());
-    }
-
-    @Test
     public void TestAdminLogin_InvalidEmailFieldAndEmptyPasswordField_ShouldBeThrowAlert(){
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
@@ -74,24 +61,33 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_ValidCredentials_ShouldLoginCorrectly(){
+    public void TestAdminLogin_EmptyPasswordField_ShouldBeThrowAlert(){
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
         String email = "dani@plam.ch";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys(email);
 
-        String password = "qwe123";
-        WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
-        passwordField.sendKeys(password);
-
-        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
-        loginButton.click();
-
-        WebElement adminSide = this.driver.findElement(By.xpath("/html/body/nav/div/div[2]/ul/li[1]/a"));
-        assertEquals("Admin side", adminSide.getText());
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
     }
 
     @Test
-    public void TestAdminLogin_InvalidCredentials_ShouldLoginCorrectly(){
+    public void TestAdminLogin_InvalidEmailEmptyPasswordField_ShouldBeThrowAlert(){
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
+        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
+        emailField.sendKeys(invalidEmail);
+
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("The Email field is required.", alertField.getText());
+    }
+
+    @Test
+    public void TestAdminLogin_InvalidCredentials_ShouldBeThrowAlert(){
         String invalidEmail = "name" + UUID.randomUUID().toString() + "@abv.bg";
         WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
         emailField.sendKeys(invalidEmail);
@@ -139,6 +135,23 @@ public class TestAdminLogin {
 
         WebElement allertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
         assertEquals("Wrong password, try again", allertField.getText());
+    }
+
+    @Test
+    public void TestAdminLogin_ValidCredentials_ShouldLoginCorrectly(){
+        String email = "dani@plam.ch";
+        WebElement emailField = this.driver.findElement(By.xpath("//input[@name='email']"));
+        emailField.sendKeys(email);
+
+        String password = "qwe123";
+        WebElement passwordField = this.driver.findElement(By.xpath("//input[@name='password']"));
+        passwordField.sendKeys(password);
+
+        WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
+        loginButton.click();
+
+        WebElement adminSide = this.driver.findElement(By.xpath("/html/body/nav/div/div[2]/ul/li[1]/a"));
+        assertEquals("Admin side", adminSide.getText());
     }
 
     @After
