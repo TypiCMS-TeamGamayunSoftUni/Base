@@ -628,7 +628,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461227682813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="AutomationTestAdminLogin">
+      <created>1461227713693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1461227713693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -709,9 +716,9 @@
     <MESSAGE value="Some little changes" />
     <MESSAGE value="AutomationTestCreateNewUser" />
     <MESSAGE value="AutomationTestLoginAdmin" />
-    <MESSAGE value="AutomationTestAdminLogin" />
     <MESSAGE value="AutomationTestPublishingNews" />
-    <option name="LAST_COMMIT_MESSAGE" value="AutomationTestPublishingNews" />
+    <MESSAGE value="AutomationTestAdminLogin" />
+    <option name="LAST_COMMIT_MESSAGE" value="AutomationTestAdminLogin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
