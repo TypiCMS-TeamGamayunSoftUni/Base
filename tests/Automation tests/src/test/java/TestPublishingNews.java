@@ -38,8 +38,6 @@ public class TestPublishingNews {
         newNewsButton.click();
     }
 
-    // Can't catch Body field
-
     @Test
     public void TestPublishingNews_WithoutDate_ShouldThrowAlert(){
         LoginAndNavigateToNewsPanel();

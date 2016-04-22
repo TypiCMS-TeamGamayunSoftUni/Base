@@ -26,7 +26,7 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_EmptyEmailAndPasswordFields_ShouldBeThrowAlert(){ ///
+    public void TestAdminLogin_EmptyEmailAndPasswordFields_ShouldBeThrowAlert(){
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
 
@@ -35,7 +35,7 @@ public class TestAdminLogin {
     }
 
     @Test
-    public void TestAdminLogin_EmptyEmailField_ShouldBeThrowAlert(){ ///
+    public void TestAdminLogin_EmptyEmailField_ShouldBeThrowAlert(){
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
 
@@ -133,8 +133,8 @@ public class TestAdminLogin {
         WebElement loginButton = this.driver.findElement(By.xpath("/html/body/div/div/div/div/form/div[4]/button"));
         loginButton.click();
 
-        WebElement allertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
-        assertEquals("Wrong password, try again", allertField.getText());
+        WebElement alertField = this.driver.findElement(By.xpath("/html/body/div/div/div/div/div/p"));
+        assertEquals("Wrong password, try again", alertField.getText());
     }
 
     @Test
